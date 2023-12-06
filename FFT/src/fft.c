@@ -3,7 +3,7 @@
 #include <math.h>
 
 #define FFT_DBG
-#define FFT_DBG_LVL FFT_DBG_VERBOSE
+#define FFT_DBG_LVL FFT_DBG_ERROR
 #include "fft_dbg.h"
 
 static fft_err_t fft_isNPowOf2(uint32_t n)
@@ -152,7 +152,6 @@ fft_err_t fft_printData(complex* data, uint32_t N)
 fft_err_t fft_printData_ver(complex* data, uint32_t N)
 {
     if (FFT_DBG_LVL < FFT_DBG_VERBOSE) {
-        FFT_DBG_ERR("print failed! because the debug level less then FFT_DBG_VERBOSE(%d).", FFT_DBG_VERBOSE);
         return FFT_ERROR;
     }
     FFT_DBG_VER("complex sequence(N=%u): ", N);

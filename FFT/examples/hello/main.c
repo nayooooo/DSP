@@ -6,7 +6,7 @@
 
 int main()
 {
-    #define DATA_SIZE       (8)
+    #define DATA_SIZE       (512)
     complex data[DATA_SIZE];
     complex Y[DATA_SIZE];
 
