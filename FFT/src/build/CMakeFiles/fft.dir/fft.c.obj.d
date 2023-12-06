@@ -15,4 +15,12 @@ CMakeFiles/fft.dir/fft.c.obj: \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stddef.h \
  D:/embedded/EmbeddedSoftware/DSP/FFT/src/include/complex.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/math.h \
+ D:/embedded/EmbeddedSoftware/DSP/FFT/src/include/fft_dbg.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h
