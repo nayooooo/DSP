@@ -1,5 +1,5 @@
 #include "fft.h"
-#include <stdlib.h>
+#include <string.h>
 
 // 2点FFT
 static fft_err_t fft_2p(complex* x, complex* y)
