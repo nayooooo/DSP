@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.lua": "lua",
+        "complex.h": "c",
+        "string.h": "c",
+        "complex": "c",
+        "stdint.h": "c",
+        "fft.h": "c"
+    }
+}
