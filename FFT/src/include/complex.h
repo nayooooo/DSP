@@ -7,6 +7,7 @@ typedef struct{
     double real;
     double imag;
 } complex;
+#define _COMPLEX_DEFINED
 
 complex* complex_add(complex* result, complex a, complex b);
 complex* complex_sub(complex* result, complex a, complex b);

@@ -2,7 +2,7 @@
 #define __FFT_TYPE_H__
 
 #ifndef PI
-#   define PI       (3.1415926)
+#   define PI       (3.14159265358979323846)
 #endif  // !PI
 
 #include <stdint.h>
