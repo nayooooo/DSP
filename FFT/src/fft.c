@@ -3,7 +3,7 @@
 #include <math.h>
 
 #define FFT_DBG
-#define FFT_DBG_LVL FFT_DBG_LOGE
+#define FFT_DBG_LVL FFT_DBG_VERBOSE
 #include "fft_dbg.h"
 
 static fft_err_t fft_isNPowOf2(uint32_t n)
@@ -83,6 +83,8 @@ static fft_err_t fft_butterflyOperation(complex* data, uint32_t N)
         pfac = 1U << (M - L);
         for (uint32_t J = 0; J < 1U << (L - 1); J++) {  // 解算旋转因子
             fft_calcWNkn(&WNp, N, J * pfac);
+            FFT_DBG_VER("L=%u, J=%u, WNp: ", L, J);
+            fft_printData_ver(&WNp, 1);
             for (uint64_t i = J; i < N; i += 1ULL << L) {  // 进行蝶形运算
                 memcpy(&addend, &data[i], sizeof(complex));
                 complex_mul(&t, data[i + (1ULL << (L - 1))], WNp);
@@ -91,18 +93,18 @@ static fft_err_t fft_butterflyOperation(complex* data, uint32_t N)
             }
         }
         if (L == 1) {
-            FFT_DBG_LOG("Calculation completed for the %ust level butterfly operation", L);
+            FFT_DBG_VER("Calculation completed for the %ust level butterfly operation", L);
         }
         else if (L == 2) {
-            FFT_DBG_LOG("Calculation completed for the %und level butterfly operation", L);
+            FFT_DBG_VER("Calculation completed for the %und level butterfly operation", L);
         }
         else if (L == 3) {
-            FFT_DBG_LOG("Calculation completed for the %urd level butterfly operation", L);
+            FFT_DBG_VER("Calculation completed for the %urd level butterfly operation", L);
         }
         else {
-            FFT_DBG_LOG("Calculation completed for the %uth level butterfly operation", L);
+            FFT_DBG_VER("Calculation completed for the %uth level butterfly operation", L);
         }
-        fft_printData_log(data, N);
+        fft_printData_ver(data, N);
     }
 
     return FFT_OK;
@@ -131,6 +133,8 @@ fft_err_t fft(complex* x, uint32_t x_N, complex* y, uint32_t N)
         memcpy(y, x, N * sizeof(complex));
     }
     fft_indexed(y, N);
+    FFT_DBG_VER("indexed sequence: ");
+    fft_printData_ver(y, N);
     fft_butterflyOperation(y, N);
 
     return FFT_OK;
@@ -145,11 +149,15 @@ fft_err_t fft_printData(complex* data, uint32_t N)
     return FFT_OK;
 }
 
-fft_err_t fft_printData_log(complex* data, uint32_t N)
+fft_err_t fft_printData_ver(complex* data, uint32_t N)
 {
-    FFT_DBG_LOG("complex sequence(N=%u): ", N);
+    if (FFT_DBG_LVL < FFT_DBG_VERBOSE) {
+        FFT_DBG_ERR("print failed! because the debug level less then FFT_DBG_VERBOSE(%d).", FFT_DBG_VERBOSE);
+        return FFT_ERROR;
+    }
+    FFT_DBG_VER("complex sequence(N=%u): ", N);
     for (uint64_t i = 0; i < N; i++) {
-        FFT_DBG_LOG("[%u]\t%.4f%+.4fi", i, data[i].real, data[i].imag);
+        FFT_DBG_VER("[%u]\t%.4f%+.4fi", i, data[i].real, data[i].imag);
     }
     return FFT_OK;
 }
