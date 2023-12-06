@@ -29,3 +29,9 @@ complex* complex_div(complex* result, complex a, complex b)
     result->imag = (a.imag * b.real - a.real * b.imag) / den;
     return result;
 }
+
+complex* complex_phaseInv(complex* data)
+{
+    data->imag = -data->imag;
+    return data;
+}

@@ -24,7 +24,7 @@ static fft_err_t fft_swap(complex* a, complex* b)
     return FFT_OK;
 }
 
-// 倒序变址
+// Reverse index
 static fft_err_t fft_indexed(complex* data, uint32_t N)
 {
     if (N == 0) {
@@ -55,7 +55,7 @@ static fft_err_t fft_indexed(complex* data, uint32_t N)
     return FFT_OK;
 }
 
-// 解算WN
+// calculate WN
 static fft_err_t fft_calcWNkn(complex* result, uint32_t N, uint32_t kn)
 {
     result->real = cos(2 * PI * kn / N);
@@ -63,7 +63,7 @@ static fft_err_t fft_calcWNkn(complex* result, uint32_t N, uint32_t kn)
     return FFT_OK;
 }
 
-// 蝶形运算
+// butterfly operation
 static fft_err_t fft_butterflyOperation(complex* data, uint32_t N)
 {
     if (N < 2) {
@@ -79,13 +79,13 @@ static fft_err_t fft_butterflyOperation(complex* data, uint32_t N)
     do { M++; temp >>= 1; } while (temp != 1);
     uint32_t pfac;
     complex WNp, t, addend;
-    for (uint32_t L = 1; L <= M; L++) {  // 第L层蝶形运算
+    for (uint32_t L = 1; L <= M; L++) {  // L-layer butterfly operation
         pfac = 1U << (M - L);
-        for (uint32_t J = 0; J < 1U << (L - 1); J++) {  // 解算旋转因子
+        for (uint32_t J = 0; J < 1U << (L - 1); J++) {  // Calculate rotation factor
             fft_calcWNkn(&WNp, N, J * pfac);
             FFT_DBG_VER("L=%u, J=%u, WNp: ", L, J);
             fft_printData_ver(&WNp, 1);
-            for (uint64_t i = J; i < N; i += 1ULL << L) {  // 进行蝶形运算
+            for (uint32_t i = J; i < N; i += 1ULL << L) {  // Perform butterfly operation
                 memcpy(&addend, &data[i], sizeof(complex));
                 complex_mul(&t, data[i + (1ULL << (L - 1))], WNp);
                 complex_add(&data[i], addend, t);
@@ -136,6 +136,40 @@ fft_err_t fft(complex* x, uint32_t x_N, complex* y, uint32_t N)
     FFT_DBG_VER("indexed sequence: ");
     fft_printData_ver(y, N);
     fft_butterflyOperation(y, N);
+
+    return FFT_OK;
+}
+
+fft_err_t ifft(complex* x, uint32_t x_N, complex* y, uint32_t N)
+{
+    if (x_N == 0) {
+        FFT_DBG_ERR("The x data is empty!");
+        return FFT_ERROR_INPUT_SIGNAL;
+    }
+    if (N == 0) {
+        FFT_DBG_ERR("The y data is empty!");
+        return FFT_ERROR_POINTS;
+    }
+    if (FFT_OK != fft_isNPowOf2(N)) {
+        FFT_DBG_ERR("The number(%u) is not a 2^N number.", N);
+        return FFT_ERROR_POINTS;
+    }
+
+    // In order to not change x, it is necessary to restore it after fft.
+    // If it involves multiple threads, please add a lock here.
+    for (uint32_t i = 0; i < x_N; i++) {
+        complex_phaseInv(&x[i]);
+    }
+    fft(x, x_N, y, N);
+    for (uint32_t i = 0; i < x_N; i++) {
+        complex_phaseInv(&x[i]);
+    }
+
+    complex temp = { N, 0 };
+    for (uint32_t i = 0; i < N; i++) {
+        complex_div(&y[i], y[i], temp);
+        complex_phaseInv(&y[i]);
+    }
 
     return FFT_OK;
 }

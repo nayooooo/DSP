@@ -14,4 +14,6 @@ complex* complex_sub(complex* result, complex a, complex b);
 complex* complex_mul(complex* result, complex a, complex b);
 complex* complex_div(complex* result, complex a, complex b);
 
+complex* complex_phaseInv(complex* data);
+
 #endif  // !__COMPLEX_H__
