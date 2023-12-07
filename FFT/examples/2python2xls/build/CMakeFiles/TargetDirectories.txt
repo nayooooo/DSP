@@ -1,0 +1,3 @@
+D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/build/CMakeFiles/2python2xls.dir
+D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/build/CMakeFiles/edit_cache.dir
+D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/build/CMakeFiles/rebuild_cache.dir

@@ -3,7 +3,8 @@
     {
       "name": "windows-gcc-x64",
       "includePath": [
-        "${workspaceFolder}/**"
+        "${workspaceFolder}/**",
+        "C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/include/**"
       ],
       "compilerPath": "C:/Users/YEWAN/mingw64/bin/gcc.exe",
       "cStandard": "${default}",
