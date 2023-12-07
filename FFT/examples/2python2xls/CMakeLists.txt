@@ -1,13 +1,31 @@
-cmake_minimum_required(VERSION 3.0.0)
-project(2python2xls VERSION 1.0.0)
+cmake_minimum_required( VERSION 3.0.0 )
+project( 2python2xls VERSION 1.0.0 )
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
-set(SRC_LIST main.c)
-set(SRC ${SRC_LIST})
-include_directories(${PROJECT_SOURCE_DIR})
-include_directories(${PROJECT_SOURCE_DIR}/../../src/include)
-set(PYTHON_DIR C:/Users/YEWAN/AppData/Local/Programs/Python/Python311)
-include_directories(${PYTHON_DIR}/include)
+set( SRC_LIST main.c )
+set( SRC ${SRC_LIST} )
+include_directories( ${PROJECT_SOURCE_DIR} )
+include_directories( ${PROJECT_SOURCE_DIR}/../../src/include )
 
-add_executable(2python2xls ${SRC})
-target_link_libraries(2python2xls
-                        ${PROJECT_SOURCE_DIR}/../../lib/fft.a)
+find_package( Python3 COMPONENTS Interpreter Development )
+
+message ( STATUS "Python3_FOUND = ${Python3_FOUND} " )
+message ( STATUS "Python3_INCLUDE_DIRS = ${Python3_INCLUDE_DIRS} " )
+message ( STATUS "Python3_LIBRARIES = ${Python3_LIBRARIES} " )
+
+if ( ${Python3_FOUND} )
+    # include_directories( ${Python3_INCLUDE_DIRS} )
+else ()
+    message( FATAL_ERROR "Python3 not found, please install it." )
+endif ()
+
+add_executable( ${PROJECT_NAME} ${SRC} )
+target_include_directories( ${PROJECT_NAME}
+    PRIVATE
+        ${Python3_INCLUDE_DIRS}
+)
+target_link_libraries( ${PROJECT_NAME}
+    PRIVATE
+        ${PROJECT_SOURCE_DIR}/../../lib/fft.a
+        ${Python3_LIBRARIES}
+)

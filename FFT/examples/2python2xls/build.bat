@@ -1,5 +1,6 @@
 if exist "./build" (
-    del /s /q "./build" & echo build directory cleared.
+    @REM del /s /q "./build" & echo build directory cleared.
+    echo build directory exist.
 ) else (
     mkdir build & echo build directory created.
 )
@@ -10,6 +11,8 @@ cd build
 cmake .. -G "MinGW Makefiles"
 make
 
+cd ../bin
 2python2xls.exe
+cd ..
 
 pause

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/embedded/EmbeddedSoftware/DSP/FFT/examples/hello",
-      "program": "d:/embedded/EmbeddedSoftware/DSP/FFT/examples/hello/build/Debug/outDebug",
+      "cwd": "d:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls",
+      "program": "d:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

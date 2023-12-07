@@ -1,1 +1,1 @@
- D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/../../lib/fft.a C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/python3.dll C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/vcruntime140.dll -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/../../lib/fft.a C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/libs/python311.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
