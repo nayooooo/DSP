@@ -4,6 +4,7 @@ import pandas as pd
 def data2xls(data, savePath='./xls', xlsName='data', xlsSheetName='Sheet1'):
     df = pd.DataFrame(data)
     df.to_excel(savePath + '/' + xlsName + '.xlsx', xlsSheetName, index=False)
+    print('save to \'' + savePath + '/' + xlsName + '.xlsx\'' + ' OK')
 
 
 if __name__ == '__main__':
