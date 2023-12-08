@@ -421,29 +421,6 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/python.exe][C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/libs/python311.lib][C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/include][cfound components: Interpreter Development Development.Module Development.Embed ][v3.11.5()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
-//Compiler reason failure
-_Python3_Compiler_REASON_FAILURE:INTERNAL=
-_Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=7cd79da42a7584ac807c8ed5b6e83936
-_Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=7cd79da42a7584ac807c8ed5b6e83936
-//Path to a program.
-_Python3_EXECUTABLE:INTERNAL=C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/python.exe
-//Path to a file.
-_Python3_INCLUDE_DIR:INTERNAL=C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/include
-//Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;5;64;;cp311-win_amd64;C:\Users\YEWAN\AppData\Local\Programs\Python\Python311\Lib;C:\Users\YEWAN\AppData\Local\Programs\Python\Python311\Lib;C:\Users\YEWAN\AppData\Local\Programs\Python\Python311\Lib\site-packages;C:\Users\YEWAN\AppData\Local\Programs\Python\Python311\Lib\site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=dea375161068f0f3ef823a12a993eb54
-//Interpreter reason failure
-_Python3_Interpreter_REASON_FAILURE:INTERNAL=
-//Path to a library.
-_Python3_LIBRARY_DEBUG:INTERNAL=_Python3_LIBRARY_DEBUG-NOTFOUND
-//Path to a library.
-_Python3_LIBRARY_RELEASE:INTERNAL=C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/libs/python311.lib
-//NumPy reason failure
-_Python3_NumPy_REASON_FAILURE:INTERNAL=
-//Path to a library.
-_Python3_RUNTIME_LIBRARY_RELEASE:INTERNAL=C:/Users/YEWAN/AppData/Local/Programs/Python/Python311/python311.dll
 
