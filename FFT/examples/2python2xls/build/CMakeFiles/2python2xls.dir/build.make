@@ -93,6 +93,7 @@ CMakeFiles/2python2xls.dir/main.c.s: cmake_force
 D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/bin/2python2xls.exe: CMakeFiles/2python2xls.dir/main.c.obj
 D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/bin/2python2xls.exe: CMakeFiles/2python2xls.dir/build.make
 D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/bin/2python2xls.exe: D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/../../lib/fft.a
+D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/bin/2python2xls.exe: D:/ProgramData/Anaconda3/envs/python311/libs/python311.lib
 D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/bin/2python2xls.exe: CMakeFiles/2python2xls.dir/linkLibs.rsp
 D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/bin/2python2xls.exe: CMakeFiles/2python2xls.dir/objects1
 D:/embedded/EmbeddedSoftware/DSP/FFT/examples/2python2xls/bin/2python2xls.exe: CMakeFiles/2python2xls.dir/link.txt

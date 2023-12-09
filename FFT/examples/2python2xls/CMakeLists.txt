@@ -7,20 +7,15 @@ set( SRC ${SRC_LIST} )
 include_directories( ${PROJECT_SOURCE_DIR} )
 include_directories( ${PROJECT_SOURCE_DIR}/../../src/include )
 
-set(Python3_EXECUTABLE "D:/ProgramData/Anaconda3/python.exe")
-find_package(Python3 REQUIRED COMPONENTS Interpreter)
-# set ( Python3_FOUND TRUE )
-# set ( Python3DIR "D:/ProgramData/Anaconda3/envs/python311" )
-# set ( Python3_INCLUDE_DIRS "${Python3DIR}/include" )
-# set ( Python3_LIBRARIES "${Python3DIR}/libs/python311.lib" )
-# list ( APPEND Python3_LIBRARIES "${Python3DIR}/Lib/site-packages/pandas" )
-
+set( Python3_EXECUTABLE "D:/ProgramData/Anaconda3/envs/python311/python.exe" )
+find_package( Python3 REQUIRED COMPONENTS Interpreter Development )
 message ( STATUS "Python3_FOUND = ${Python3_FOUND} " )
 message ( STATUS "Python3_INCLUDE_DIRS = ${Python3_INCLUDE_DIRS} " )
 message ( STATUS "Python3_LIBRARIES = ${Python3_LIBRARIES} " )
 
 if ( ${Python3_FOUND} )
     include_directories( ${Python3_INCLUDE_DIRS} )
+    set ( Python3_Pandas_LIBRARIES "${Python3_INCLUDE_DIRS}/../Lib/site-packages/pandas/_libs" )
 else ()
     message( FATAL_ERROR "Python3 not found, please install it." )
 endif ()
@@ -35,3 +30,4 @@ target_link_libraries( ${PROJECT_NAME}
         ${PROJECT_SOURCE_DIR}/../../lib/fft.a
         ${Python3_LIBRARIES}
 )
+link_directories ( ${Python3_Pandas_LIBRARIES} )
