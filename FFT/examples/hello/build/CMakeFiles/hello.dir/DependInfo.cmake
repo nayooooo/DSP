@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/embedded/EmbeddedSoftware/DSP/FFT/examples/hello/main.c" "CMakeFiles/hello.dir/main.c.obj" "gcc" "CMakeFiles/hello.dir/main.c.obj.d"
+  "D:/Software/DSP/FFT/examples/hello/main.c" "CMakeFiles/hello.dir/main.c.obj" "gcc" "CMakeFiles/hello.dir/main.c.obj.d"
   )
 
 # Targets to which this target links.

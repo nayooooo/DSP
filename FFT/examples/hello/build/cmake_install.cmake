@@ -1,4 +1,4 @@
-# Install script for directory: D:/embedded/EmbeddedSoftware/DSP/FFT/examples/hello
+# Install script for directory: D:/Software/DSP/FFT/examples/hello
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/embedded/EmbeddedSoftware/DSP/FFT/examples/hello/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Software/DSP/FFT/examples/hello/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

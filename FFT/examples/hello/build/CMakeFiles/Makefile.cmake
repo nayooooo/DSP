@@ -106,7 +106,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.25/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-3.25/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake"
-  "D:/embedded/EmbeddedSoftware/DSP/FFT/examples/hello/CMakeLists.txt"
+  "D:/Software/DSP/FFT/examples/hello/CMakeLists.txt"
   "CMakeFiles/3.25.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeRCCompiler.cmake"

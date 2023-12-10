@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\2python2xls.dir/objects.a
-C:\Users\YEWAN\mingw64\bin\ar.exe qc CMakeFiles\2python2xls.dir/objects.a @CMakeFiles\2python2xls.dir\objects1
-C:\Users\YEWAN\mingw64\bin\gcc.exe -Wl,--whole-archive CMakeFiles\2python2xls.dir/objects.a -Wl,--no-whole-archive -o D:\embedded\EmbeddedSoftware\DSP\FFT\examples\2python2xls\bin\2python2xls.exe -Wl,--out-implib,D:\embedded\EmbeddedSoftware\DSP\FFT\examples\2python2xls\bin\lib2python2xls.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\2python2xls.dir\linkLibs.rsp
