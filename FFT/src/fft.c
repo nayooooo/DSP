@@ -8,7 +8,7 @@
 
 static fft_err_t fft_isNPowOf2(uint32_t n)
 {
-    if (n & (n - 1) != 0) {
+    if ((n & (n - 1)) != 0) {
         FFT_DBG_ERR("The number(%u) is not a 2^N number.", n);
         return FFT_ERROR;
     }
@@ -188,7 +188,7 @@ fft_err_t fft_printData(complex* data, uint32_t N)
 {
     fft_printf("complex sequence(N=%u): \r\n", N);
     for (uint64_t i = 0; i < N; i++) {
-        fft_printf("[%u]\t%.4f%+.4fi\r\n", i, data[i].real, data[i].imag);
+        fft_printf("[%u]\t%.4f%+.4fi\r\n", (unsigned int)i, data[i].real, data[i].imag);
     }
     return FFT_OK;
 }
