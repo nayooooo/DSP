@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\embedded\EmbeddedSoftware\DSP\FFT\src
+CMAKE_SOURCE_DIR = D:\Software\DSP\FFT\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\embedded\EmbeddedSoftware\DSP\FFT\src\build
+CMAKE_BINARY_DIR = D:\Software\DSP\FFT\src\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/fft.dir/clean
 CMakeFiles/fft.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fft.dir\build.make CMakeFiles/fft.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fft.dir\build.make CMakeFiles/fft.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\embedded\EmbeddedSoftware\DSP\FFT\src\build\CMakeFiles --progress-num=1,2,3 "Built target fft"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Software\DSP\FFT\src\build\CMakeFiles --progress-num=1,2,3 "Built target fft"
 .PHONY : CMakeFiles/fft.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/fft.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\embedded\EmbeddedSoftware\DSP\FFT\src\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Software\DSP\FFT\src\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/fft.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\embedded\EmbeddedSoftware\DSP\FFT\src\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Software\DSP\FFT\src\build\CMakeFiles 0
 .PHONY : CMakeFiles/fft.dir/rule
 
 # Convenience name for target.

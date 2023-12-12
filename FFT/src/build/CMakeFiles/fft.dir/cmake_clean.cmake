@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/fft.dir/complex.c.obj.d"
   "CMakeFiles/fft.dir/fft.c.obj"
   "CMakeFiles/fft.dir/fft.c.obj.d"
-  "D:/embedded/EmbeddedSoftware/DSP/FFT/lib/fft.a"
-  "D:/embedded/EmbeddedSoftware/DSP/FFT/lib/fft.pdb"
+  "D:/Software/DSP/FFT/lib/fft.a"
+  "D:/Software/DSP/FFT/lib/fft.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,6 @@
-CMakeFiles/fft.dir/fft.c.obj: \
- D:\embedded\EmbeddedSoftware\DSP\FFT\src\fft.c \
- D:/embedded/EmbeddedSoftware/DSP/FFT/src/include/fft.h \
- D:/embedded/EmbeddedSoftware/DSP/FFT/src/include/fft_type.h \
+CMakeFiles/fft.dir/fft.c.obj: D:\Software\DSP\FFT\src\fft.c \
+ D:/Software/DSP/FFT/src/include/fft.h \
+ D:/Software/DSP/FFT/src/include/fft_type.h \
  C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
@@ -13,11 +12,11 @@ CMakeFiles/fft.dir/fft.c.obj: \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
  C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stddef.h \
- D:/embedded/EmbeddedSoftware/DSP/FFT/src/include/complex.h \
+ D:/Software/DSP/FFT/src/include/complex.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/math.h \
- D:/embedded/EmbeddedSoftware/DSP/FFT/src/include/fft_dbg.h \
+ D:/Software/DSP/FFT/src/include/fft_dbg.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \

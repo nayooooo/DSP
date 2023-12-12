@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/embedded/EmbeddedSoftware/DSP/FFT/src/complex.c" "CMakeFiles/fft.dir/complex.c.obj" "gcc" "CMakeFiles/fft.dir/complex.c.obj.d"
-  "D:/embedded/EmbeddedSoftware/DSP/FFT/src/fft.c" "CMakeFiles/fft.dir/fft.c.obj" "gcc" "CMakeFiles/fft.dir/fft.c.obj.d"
+  "D:/Software/DSP/FFT/src/complex.c" "CMakeFiles/fft.dir/complex.c.obj" "gcc" "CMakeFiles/fft.dir/complex.c.obj.d"
+  "D:/Software/DSP/FFT/src/fft.c" "CMakeFiles/fft.dir/fft.c.obj" "gcc" "CMakeFiles/fft.dir/fft.c.obj.d"
   )
 
 # Targets to which this target links.

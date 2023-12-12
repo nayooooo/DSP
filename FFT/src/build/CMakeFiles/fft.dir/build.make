@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\embedded\EmbeddedSoftware\DSP\FFT\src
+CMAKE_SOURCE_DIR = D:\Software\DSP\FFT\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\embedded\EmbeddedSoftware\DSP\FFT\src\build
+CMAKE_BINARY_DIR = D:\Software\DSP\FFT\src\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fft.dir/depend.make
@@ -70,33 +70,33 @@ include CMakeFiles/fft.dir/flags.make
 
 CMakeFiles/fft.dir/complex.c.obj: CMakeFiles/fft.dir/flags.make
 CMakeFiles/fft.dir/complex.c.obj: CMakeFiles/fft.dir/includes_C.rsp
-CMakeFiles/fft.dir/complex.c.obj: D:/embedded/EmbeddedSoftware/DSP/FFT/src/complex.c
+CMakeFiles/fft.dir/complex.c.obj: D:/Software/DSP/FFT/src/complex.c
 CMakeFiles/fft.dir/complex.c.obj: CMakeFiles/fft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\embedded\EmbeddedSoftware\DSP\FFT\src\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fft.dir/complex.c.obj"
-	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fft.dir/complex.c.obj -MF CMakeFiles\fft.dir\complex.c.obj.d -o CMakeFiles\fft.dir\complex.c.obj -c D:\embedded\EmbeddedSoftware\DSP\FFT\src\complex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Software\DSP\FFT\src\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fft.dir/complex.c.obj"
+	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fft.dir/complex.c.obj -MF CMakeFiles\fft.dir\complex.c.obj.d -o CMakeFiles\fft.dir\complex.c.obj -c D:\Software\DSP\FFT\src\complex.c
 
 CMakeFiles/fft.dir/complex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fft.dir/complex.c.i"
-	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\embedded\EmbeddedSoftware\DSP\FFT\src\complex.c > CMakeFiles\fft.dir\complex.c.i
+	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Software\DSP\FFT\src\complex.c > CMakeFiles\fft.dir\complex.c.i
 
 CMakeFiles/fft.dir/complex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fft.dir/complex.c.s"
-	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\embedded\EmbeddedSoftware\DSP\FFT\src\complex.c -o CMakeFiles\fft.dir\complex.c.s
+	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Software\DSP\FFT\src\complex.c -o CMakeFiles\fft.dir\complex.c.s
 
 CMakeFiles/fft.dir/fft.c.obj: CMakeFiles/fft.dir/flags.make
 CMakeFiles/fft.dir/fft.c.obj: CMakeFiles/fft.dir/includes_C.rsp
-CMakeFiles/fft.dir/fft.c.obj: D:/embedded/EmbeddedSoftware/DSP/FFT/src/fft.c
+CMakeFiles/fft.dir/fft.c.obj: D:/Software/DSP/FFT/src/fft.c
 CMakeFiles/fft.dir/fft.c.obj: CMakeFiles/fft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\embedded\EmbeddedSoftware\DSP\FFT\src\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fft.dir/fft.c.obj"
-	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fft.dir/fft.c.obj -MF CMakeFiles\fft.dir\fft.c.obj.d -o CMakeFiles\fft.dir\fft.c.obj -c D:\embedded\EmbeddedSoftware\DSP\FFT\src\fft.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Software\DSP\FFT\src\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fft.dir/fft.c.obj"
+	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fft.dir/fft.c.obj -MF CMakeFiles\fft.dir\fft.c.obj.d -o CMakeFiles\fft.dir\fft.c.obj -c D:\Software\DSP\FFT\src\fft.c
 
 CMakeFiles/fft.dir/fft.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fft.dir/fft.c.i"
-	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\embedded\EmbeddedSoftware\DSP\FFT\src\fft.c > CMakeFiles\fft.dir\fft.c.i
+	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Software\DSP\FFT\src\fft.c > CMakeFiles\fft.dir\fft.c.i
 
 CMakeFiles/fft.dir/fft.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fft.dir/fft.c.s"
-	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\embedded\EmbeddedSoftware\DSP\FFT\src\fft.c -o CMakeFiles\fft.dir\fft.c.s
+	C:\Users\YEWAN\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Software\DSP\FFT\src\fft.c -o CMakeFiles\fft.dir\fft.c.s
 
 # Object files for target fft
 fft_OBJECTS = \
@@ -106,16 +106,16 @@ fft_OBJECTS = \
 # External object files for target fft
 fft_EXTERNAL_OBJECTS =
 
-D:/embedded/EmbeddedSoftware/DSP/FFT/lib/fft.a: CMakeFiles/fft.dir/complex.c.obj
-D:/embedded/EmbeddedSoftware/DSP/FFT/lib/fft.a: CMakeFiles/fft.dir/fft.c.obj
-D:/embedded/EmbeddedSoftware/DSP/FFT/lib/fft.a: CMakeFiles/fft.dir/build.make
-D:/embedded/EmbeddedSoftware/DSP/FFT/lib/fft.a: CMakeFiles/fft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\embedded\EmbeddedSoftware\DSP\FFT\src\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library D:\embedded\EmbeddedSoftware\DSP\FFT\lib\fft.a"
+D:/Software/DSP/FFT/lib/fft.a: CMakeFiles/fft.dir/complex.c.obj
+D:/Software/DSP/FFT/lib/fft.a: CMakeFiles/fft.dir/fft.c.obj
+D:/Software/DSP/FFT/lib/fft.a: CMakeFiles/fft.dir/build.make
+D:/Software/DSP/FFT/lib/fft.a: CMakeFiles/fft.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Software\DSP\FFT\src\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library D:\Software\DSP\FFT\lib\fft.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\fft.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\fft.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/fft.dir/build: D:/embedded/EmbeddedSoftware/DSP/FFT/lib/fft.a
+CMakeFiles/fft.dir/build: D:/Software/DSP/FFT/lib/fft.a
 .PHONY : CMakeFiles/fft.dir/build
 
 CMakeFiles/fft.dir/clean:
@@ -123,6 +123,6 @@ CMakeFiles/fft.dir/clean:
 .PHONY : CMakeFiles/fft.dir/clean
 
 CMakeFiles/fft.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\embedded\EmbeddedSoftware\DSP\FFT\src D:\embedded\EmbeddedSoftware\DSP\FFT\src D:\embedded\EmbeddedSoftware\DSP\FFT\src\build D:\embedded\EmbeddedSoftware\DSP\FFT\src\build D:\embedded\EmbeddedSoftware\DSP\FFT\src\build\CMakeFiles\fft.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Software\DSP\FFT\src D:\Software\DSP\FFT\src D:\Software\DSP\FFT\src\build D:\Software\DSP\FFT\src\build D:\Software\DSP\FFT\src\build\CMakeFiles\fft.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fft.dir/depend
 

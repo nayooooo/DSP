@@ -1,2 +1,2 @@
-C:\Users\YEWAN\mingw64\bin\ar.exe qc D:\embedded\EmbeddedSoftware\DSP\FFT\lib\fft.a CMakeFiles/fft.dir/complex.c.obj CMakeFiles/fft.dir/fft.c.obj
-C:\Users\YEWAN\mingw64\bin\ranlib.exe D:\embedded\EmbeddedSoftware\DSP\FFT\lib\fft.a
+C:\Users\YEWAN\mingw64\bin\ar.exe qc D:\Software\DSP\FFT\lib\fft.a CMakeFiles/fft.dir/complex.c.obj CMakeFiles/fft.dir/fft.c.obj
+C:\Users\YEWAN\mingw64\bin\ranlib.exe D:\Software\DSP\FFT\lib\fft.a

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Software/DSP/FFT/examples/hello",
-      "program": "d:/Software/DSP/FFT/examples/hello/build/Debug/outDebug",
+      "cwd": "d:/Software/DSP/FFT/src",
+      "program": "d:/Software/DSP/FFT/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

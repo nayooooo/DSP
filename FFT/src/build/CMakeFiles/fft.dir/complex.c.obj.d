@@ -1,6 +1,5 @@
-CMakeFiles/fft.dir/complex.c.obj: \
- D:\embedded\EmbeddedSoftware\DSP\FFT\src\complex.c \
- D:/embedded/EmbeddedSoftware/DSP/FFT/src/include/complex.h \
+CMakeFiles/fft.dir/complex.c.obj: D:\Software\DSP\FFT\src\complex.c \
+ D:/Software/DSP/FFT/src/include/complex.h \
  C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/crtdefs.h \

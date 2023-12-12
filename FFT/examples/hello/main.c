@@ -21,5 +21,8 @@ int main()
     ifft(Y, DATA_SIZE, x, DATA_SIZE);
     fft_printf("ifft signal: \r\n"); fft_printData(x, DATA_SIZE);
 
+    double den;
+    complex_div(&data[0], data[0], data[1]);
+
     return 0;
 }
